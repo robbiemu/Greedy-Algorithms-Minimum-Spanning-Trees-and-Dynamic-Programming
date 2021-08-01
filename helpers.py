@@ -24,3 +24,7 @@ def undirected_graph_of_weighted_edges(edges):
 
 def flatten(t):
     return [item for sublist in t for item in sublist]
+
+def obfuscate(value):
+  with open('values.p', 'a') as fp:
+    fp.write(str(value) + '\n')
